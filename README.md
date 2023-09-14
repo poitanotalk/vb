@@ -49,11 +49,11 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 Se a função for bem-sucedida, o valor retornado será `True` ou diferente de zero, caso contrário, o valor retornado será `False` ou igual a zero.
 
-## Exemplo 1
+## Exemplos
+
+Escrever ou definir uma cadeia de caracteres de 32767 bytes na seção e chave especificadas no perfil privado, se o arquivo não existir ele será criado.
 
 ```basic
-        ' Escrever ou definir uma cadeia de caracteres de 32767 bytes na seção e
-        ' chave especificadas no perfil privado.
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
             "Section1",
             "Key1",
@@ -61,6 +61,18 @@ Se a função for bem-sucedida, o valor retornado será `True` ou diferente de z
             System.IO.Path.GetFullPath(".\File.ini")
         )
 ```
+
+Se o parâmetro `lpString` for **NULL** apenas a cadeia de caracteres da chave será apagada.
+
+```basic
+        Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+            "Section1",
+            "Key1",
+            System.Text.Encoding.Default.GetBytes(Chr(0)),
+            System.IO.Path.GetFullPath(".\File.ini")
+        )
+```
+
 
 ## Pré-requisitos para uso da função
 
