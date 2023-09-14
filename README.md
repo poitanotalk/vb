@@ -84,9 +84,7 @@ Excluir uma *Chave* na *Seção* e *Chave* especificadas no perfil privado, se o
         )
 ```
 
-Excluir uma *Seção* na *Seção* especificada no perfil privado, se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
-
-Se o valor da *chave* for *Nothing*, independentemente do valor da *cadeia de caracteres*, toda a *seção* será excluída.
+Excluir uma *Seção* na *Seção* especificada no perfil privado, se o valor da *chave*, independentemente do valor da *cadeia de caracteres*, for igual a *Nothing* a *Seção* toda será excluída.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
