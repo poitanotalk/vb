@@ -93,7 +93,7 @@ Se o valor do parâmetro *lpKeyName* for *Nothing*, independente do valor de *lp
             System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
             System.IO.Path.GetFullPath(".\File.ini")
         )
-´´´
+```
 
 ## Pré-requisitos para uso da função
 
