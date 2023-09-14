@@ -47,7 +47,7 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 ## Retorno
 
-Se a função for bem-sucedida, o valor retornado será `True` ou diferente de zero, caso contrário, o valor retornado será `False` ou igual a zero.
+`[out] lpReturnedBool` Se a função for bem-sucedida, o valor retornado será *True* ou diferente de zero, caso contrário, o valor retornado será *False* ou igual a zero.
 
 ## Exemplos
 
