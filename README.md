@@ -8,31 +8,31 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 #### Visual Basic
 ```basic
-Private Declare Ansi Function WritePrivateProfileString _
-Lib "Kernel32.dll" _
-Alias "WritePrivateProfileStringA" (
-    ByVal lpAppName As System.String,    ' [in] LPCSTR
-    ByVal lpKeyName As System.String,    ' [in] LPCSTR
-    ByVal lpString As System.Byte(),     ' [in] LPCSTR
-    ByVal lpFileName As System.String    ' [in] LPCSTR
-) As System.Boolean                      ' [out] BOOL
+    Private Declare Ansi Function WritePrivateProfileString _
+    Lib "Kernel32.dll" _
+    Alias "WritePrivateProfileStringA" (
+        ByVal lpAppName As System.String,    ' [in] LPCSTR
+        ByVal lpKeyName As System.String,    ' [in] LPCSTR
+        ByVal lpString As System.Byte(),     ' [in] LPCSTR
+        ByVal lpFileName As System.String    ' [in] LPCSTR
+    ) As System.Boolean                      ' [out] BOOL
 ```
 
 #### Visual Basic .NET
 
 ```basic
-<System.Runtime.InteropServices.DllImport(
-"Kernel32.dll",
-CharSet:=System.Runtime.InteropServices.CharSet.Ansi,
-EntryPoint:="WritePrivateProfileStringA")>
-Private Shared Function WritePrivateProfileString(
-    ByVal lpAppName As System.String,    ' [in] LPCSTR
-    ByVal lpKeyName As System.String,    ' [in] LPCSTR
-    ByVal lpString As System.Byte(),     ' [in] LPCSTR
-    ByVal lpFileName As System.String    ' [in] LPCSTR
-) As System.Boolean                      ' [out] BOOL
-    ' Deixar o corpo da função vazio.
-End Function
+    <System.Runtime.InteropServices.DllImport(
+    "Kernel32.dll",
+    CharSet:=System.Runtime.InteropServices.CharSet.Ansi,
+    EntryPoint:="WritePrivateProfileStringA")>
+    Private Shared Function WritePrivateProfileString(
+        ByVal lpAppName As System.String,    ' [in] LPCSTR
+        ByVal lpKeyName As System.String,    ' [in] LPCSTR
+        ByVal lpString As System.Byte(),     ' [in] LPCSTR
+        ByVal lpFileName As System.String    ' [in] LPCSTR
+    ) As System.Boolean                      ' [out] BOOL
+        ' Deixar o corpo da função vazio.
+    End Function
 ```
 
 ## Parâmetros
