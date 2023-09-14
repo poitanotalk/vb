@@ -2,7 +2,7 @@
 
 #### :dependabot: Artigo · 11 de set de 2023
 
-A função **WritePrivateProfileStringA** *grava* ou *define* uma **Cadeia de Caracteres** na codificação **Ansi** para a **Seção** e **Chave** especificadas do perfil privado de um **Arquivo** INI.
+A função **WritePrivateProfileStringA** *grava* ou *define* uma **Cadeia de Caracteres**, na codificação **Ansi**, para a **Seção** e **Chave** especificadas, em um perfil privado de um **Arquivo** INI.
 
 ## Sintaxe
 
@@ -35,7 +35,7 @@ End Function
 |:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |**lpAppName**             |Representa o nome da **Seção** na qual a **Cadeia de Caracteres** será escrita. O nome **Seção** não será diferente de **SEÇÃO**, ou seja, independente de maiúsculas e minúsculas.|
 |**lpKeyName**             |Representa o nome da **Chave** para a qual a **Cadeia de Caracteres** será escrita. Se este parâmetro for **Nothing** toda a **Seção** será excluída.                              |
-|**lpString**              |Representa a **Cadeia de Caracteres** terminanda em **Null** que será escrita. Se este parâmetro for **Nothing** a **Chave** será excluída.                                        |
+|**lpString**              |Representa a **Cadeia de Caracteres** terminanda em **NULL** que será escrita. Se este parâmetro for **Nothing** a **Chave** será excluída.                                        |
 |**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                              |
 |**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                              |
 
@@ -43,8 +43,8 @@ End Function
 
 ## Exemplos
 
-Este exemplo mostra a função *escrevendo* ou *definindo* uma **Cadeia de Caracteres** na **Seção** e na **Chave** especificadas, no perfil privado de um **Arquivo** INI, no **Caminho** e **Diretório** existentes.
-
+Este exemplo mostra a função *escrevendo* ou *definindo* uma **Cadeia de Caracteres**, na **Seção** e na **Chave** especificadas, em um perfil privado de um **Arquivo** INI, no **Caminho** e **Diretório** existentes.
+                                                         
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
     "Section1",
@@ -55,7 +55,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 ```
 
 
-O exemplo a seguir *remove* ou *limpa* o espaço da **Cadeia de Caracteres**, que foi *escrita* ou *definida*, apenas escrevendo o caractere **Null**.
+O exemplo a seguir *remove* ou *limpa* o espaço da **Cadeia de Caracteres**, que foi *escrita* ou *definida*, apenas escrevendo o caractere **NULL**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
