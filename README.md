@@ -39,9 +39,9 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 `[in] lpAppName` Representa o nome da *seção* na qual a cadeia de caracteres será escrita. O nome da *seção* não será diferente de *SEÇÃO*, independente de maiúsculas e minúsculas.
 
-`[in] lpKeyName` Representa o nome da *chave* para a qual a cadeia de caracteres será escrita. Se este parâmetro for **NULL** toda a seção será excluída.
+`[in] lpKeyName` Representa o nome da *chave* para a qual a cadeia de caracteres será escrita. Se este parâmetro for *Nothing* toda a seção será excluída.
 
-`[in] lpString` Representa a *cadeia de caracteres* terminando em **NULL** que será escrita. Se este parâmetro for **NULL** a chave será excluída.
+`[in] lpString` Representa a *cadeia de caracteres* terminando em *Null* que será escrita. Se este parâmetro for *Nothing* a chave será excluída.
 
 `[in] lpFileName` Representa o nome do *arquivo* para a qual a cadeia de caracteres será escrita. Se o arquivo for criado com codificação **Unicode**, a função escreve caracteres *Unicode*, caso contrário, a função escreve caracteres *Default* **ANSI**.
 
@@ -73,7 +73,7 @@ Se o valor do parâmetro *lpString* for igual ao caractere *null*, apenas o valo
         )
 ```
 
-Se o valor do parâmetro *lpString* for *Nothing*, a chave será excluída.
+Se o valor do parâmetro *lpString* for *Nothing* toda a chave será excluída.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -84,8 +84,16 @@ Se o valor do parâmetro *lpString* for *Nothing*, a chave será excluída.
         )
 ```
 
+Se o valor do parâmetro *lpKeyName* for *Nothing*, independente do valor de *lpString*, toda a seção será excluída.
 
-
+```basic
+        Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+            "Section1",
+            Nothing,
+            System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
+            System.IO.Path.GetFullPath(".\File.ini")
+        )
+´´´
 
 ## Pré-requisitos para uso da função
 
