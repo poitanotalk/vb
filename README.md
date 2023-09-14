@@ -62,7 +62,7 @@ Escrever ou definir uma cadeia de caracteres de 32767 bytes na seção e chave e
         )
 ```
 
-Se o parâmetro `lpString` for **NULL** apenas a cadeia de caracteres da chave será apagada.
+Se o valor do parâmetro *lpString* for igual ao caractere *null*, apenas o valor da chave será apagado.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -72,6 +72,19 @@ Se o parâmetro `lpString` for **NULL** apenas a cadeia de caracteres da chave s
             System.IO.Path.GetFullPath(".\File.ini")
         )
 ```
+
+Se o valor do parâmetro *lpString* for *Nothing*, a chave será excluída.
+
+```basic
+        Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+            "Section1",
+            "Key1",
+            Nothing,
+            System.IO.Path.GetFullPath(".\File.ini")
+        )
+```
+
+
 
 
 ## Pré-requisitos para uso da função
