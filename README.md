@@ -40,8 +40,8 @@ End Function
 |Nome                      |Descrição                                                                                                                                                                          |
 |:-------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |**lpAppName**             |Representa o nome da **Seção** na qual a **Cadeia de Caracteres** será escrita. O nome **Seção** não será diferente de **SEÇÃO**, ou seja, independente de maiúsculas e minúsculas.|
-|**lpKeyName**             |Representa o nome da **Chave** para a qual a **Cadeia de Caracteres** será escrita. Se este parâmetro for **Nothing** toda a seção será excluída.                                  |
-|**lpString**              |Representa a **Cadeia de Caracteres** terminanda em **Null** que será escrita. Se este parâmetro for **Nothing** a chave será excluída.                                            |
+|**lpKeyName**             |Representa o nome da **Chave** para a qual a **Cadeia de Caracteres** será escrita. Se este parâmetro for **Nothing** toda a **Seção** será excluída.                              |
+|**lpString**              |Representa a **Cadeia de Caracteres** terminanda em **Null** que será escrita. Se este parâmetro for **Nothing** a **Chave** será excluída.                                        |
 |**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                              |
 |**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                              |
 
