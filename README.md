@@ -39,7 +39,7 @@ End Function
 |**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                              |
 |**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                              |
 
-> :bell: **Importante:** <br>Existe um valor máximo de 32.767 caracteres para **lpString** devido às plataformas Win 95/98/Me de 16 bits. É extremamente importante sempre definir um *valor* ou *buffer* de 0 a 32.767 bytes, incluindo o caractere **NULL** final.
+> :bell: **Importante:** <br>Há um valor máximo de 32.767 caracteres para **lpString** devido às plataformas Win 95/98/Me de 16 bits. É extremamente importante sempre definir um *valor* ou *buffer* de 0 a 32.767 bytes, incluindo o caractere final **NULL** para evitar erro por *overflow*. A função tem limite de capacidade mesmo aceitando valores maiores em algumas condições.
 
 ## Exemplos
 
