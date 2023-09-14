@@ -89,7 +89,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 
 #### Escrevendo Metadados - Sample
 
-Aqui está um *Aplicativo Desktop* para um *Sistema de Gerenciamento de Dados* em múltiplos arquivos INI, onde cada arquivo INI representa um *registro* em um diretório [Clientes]. Para adicionar, editar ou excluir registros reais.
+Aqui está um **Aplicativo de Área de Trabalho** para um *Sistema de Gerenciamento de Dados* em múltiplos arquivos INI, onde cada arquivo INI representa um *registro* em um diretório **Clientes**. Para **Adicionar**, **Editar** ou **Excluir** registros reais.
 
 ## Pré-requisitos para uso da função
 
