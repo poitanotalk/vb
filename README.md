@@ -62,7 +62,7 @@ Escrever ou definir uma *cadeia de caracteres* de 32767 bytes na *seção* e *ch
         )
 ```
 
-Se o valor do parâmetro *lpString* for igual ao caractere *Null*, apenas o valor da *chave* será apagado.
+Se o valor da *cadeia de caracteres* for o caractere *Null* apenas o valor da *chave* será apagado.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -73,7 +73,7 @@ Se o valor do parâmetro *lpString* for igual ao caractere *Null*, apenas o valo
         )
 ```
 
-Se o valor do parâmetro *lpString* for *Nothing* toda a *chave* será excluída.
+Se o valor da *cadeia de caracteres* for *Nothing* toda a *chave* será excluída.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -84,7 +84,7 @@ Se o valor do parâmetro *lpString* for *Nothing* toda a *chave* será excluída
         )
 ```
 
-Se o valor do parâmetro *lpKeyName* for *Nothing*, independente do valor de *lpString*, toda a *seção* será excluída.
+Se toda a *chave* for *Nothing*, independentemente do valor da *cadeia de caracteres*, toda a *seção* será excluída.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
