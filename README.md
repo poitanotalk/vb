@@ -66,7 +66,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Já este exemplo *exclui permanentemente* toda a **Chave**, na **Seção** e na **Chave** especificadas no perfil privado do **Arquivo**, se o valor da **Cadeia de Caracteres** for apenas **Nothing**.
+Já este exemplo *exclui permanentemente* toda a **Chave**, na **Seção** e na **Chave** especificadas, no perfil privado do **Arquivo**, se o valor da **Cadeia de Caracteres** for apenas **Nothing**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -77,7 +77,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-E este exemplo *exclui permanentemente* toda a **Seção** se o valor da **Chave** for apenas **Nothing**, independentemente se o valor da **Cadeia de Caracteres** estiver **Nothing** .
+E este exemplo *exclui permanentemente* toda a **Seção**, se o valor da **Chave** for apenas **Nothing**, independentemente se o valor da **Cadeia de Caracteres** estiver **Nothing** .
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
