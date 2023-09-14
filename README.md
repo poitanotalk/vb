@@ -43,7 +43,7 @@ End Function
 
 ## Exemplos
 
-Este exemplo mostra a função *escrevendo* ou *definindo* uma **Cadeia de Caracteres** na **Seção** e na **Chave** especificadas no perfil privado de um **Arquivo** INI no **Caminho** e **Diretório** existentes.
+Este exemplo mostra a função *escrevendo* ou *definindo* uma **Cadeia de Caracteres** na **Seção** e na **Chave** especificadas, no perfil privado de um **Arquivo** INI, no **Caminho** e **Diretório** existentes.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
