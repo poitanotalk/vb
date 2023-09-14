@@ -1,6 +1,6 @@
 ## :books: Função WritePrivateProfileStringA - Kernel32.dll
 
-#### :dependabot: Artigo · 11 Set 2023
+#### :dependabot: Artigo · 11 de set de 2023
 
 A função **WritePrivateProfileStringA** *grava* ou *define* uma **Cadeia de Caracteres** na codificação **Ansi** para a **Seção** e **Chave** especificadas do perfil privado de um **Arquivo** INI.
 
