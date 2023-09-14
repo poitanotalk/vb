@@ -2,7 +2,7 @@
 
 #### :dependabot: Artigo · 11 Set 2023
 
-Esta função serve para *escrever* ou *definir* uma **Cadeia de Caracteres** na **Seção** e **Chave** especificadas no perfil privado de um **Arquivo** INI.
+A função `WritePrivateProfileStringA` *grava* ou *define* uma **Cadeia de Caracteres** na codificação **Ansi** para a **Seção** e **Chave** especificadas do perfil privado de um **Arquivo** INI.
 
 ## Sintaxe
 
