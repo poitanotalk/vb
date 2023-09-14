@@ -2,7 +2,7 @@
 
 #### :dependabot: Artigo · 11 Set 2023
 
-Esta função serve para escrever ou definir uma cadeia de caracteres na seção e chave especificadas no perfil privado.
+Esta função serve para *escrever* ou *definir* uma **Cadeia de Caracteres** na **Seção** e **Chave** especificadas no perfil privado de um **Arquivo** INI.
 
 ## Sintaxe
 
@@ -49,7 +49,7 @@ End Function
 
 ## Exemplos
 
-Neste exemplo, a função escreve ou define uma **Cadeia de Caracteres** na **Seção** e **Chave** especificadas no perfil privado do **Arquivo**, requer apenas o **Caminho** e **Diretório** existentes, se o **Arquivo** não existir ele será criado.
+Este exemplo mostra a função *escrevendo* ou *definindo* um valor **"Value1" & Chr(0)** na **Section1** e **Key1** especificadas no perfil privado de um **Arquivo** *File.ini* no **Caminho** e **Diretório** existentes.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -60,7 +60,8 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-O exemplo a seguir apaga ou limpa o espaço do campo ou valor ****Cadeia de Caracteres**** se for apenas o caractere **Null**.
+
+O exemplo a seguir *remove* ou *limpa* o espaço da **Cadeia de Caracteres**, que foi *escrita* ou *definida*, apenas escrevendo o caractere **Null**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -71,7 +72,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Este exemplo exclui uma **Chave** inteira, na **Seção** e na **Chave** especificadas no perfil privado do **Arquivo**, se o valor da **Cadeia de Caracteres** for apenas **Nothing** .
+Já este exemplo *exclui permanentemente* toda a **Chave**, na **Seção** e na **Chave** especificadas no perfil privado do **Arquivo**, se o valor da **Cadeia de Caracteres** for apenas **Nothing**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -82,7 +83,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Já este exemplo exclui uma **Seção** inteira se o valor da **Chave** for apenas **Nothing**, independentemente se o valor da **Cadeia de Caracteres** estiver **Nothing**.
+E este exemplo *exclui permanentemente* toda a **Seção** se o valor da **Chave** for apenas **Nothing**, independentemente se o valor da **Cadeia de Caracteres** estiver **Nothing** .
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
