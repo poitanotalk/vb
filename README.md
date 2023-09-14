@@ -47,6 +47,18 @@ End Function
 
 `[out] lpReturnedBool` Se a função for bem-sucedida, o valor retornado será *True* ou diferente de zero, caso contrário, o valor retornado será *False* ou igual a zero.
 
+
+
+|  Parâmetro                 | Descrição                                                                                                                                                           |
+| :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|**lpAppName**               | Representa o nome da *seção* na qual a cadeia de caracteres será escrita. O nome da *seção* não será diferente de *SEÇÃO*, independente de maiúsculas e minúsculas. |
+|**lpKeyName**               | Representa o nome da *chave* para a qual a cadeia de caracteres será escrita. Se este parâmetro for *Nothing* toda a seção será excluída.                           |
+|**lpString**                | Representa a *cadeia de caracteres* terminando em *Null* que será escrita. Se este parâmetro for *Nothing* a chave será excluída.                                   |
+|**lpFileName**              | Representa o caminho e o nome do *arquivo* para a qual a cadeia de caracteres será escrita.                                                                         |
+|**lpReturnedBool**          | Se a função for bem-sucedida, o valor retornado será *True* ou diferente de zero, caso contrário, o valor retornado será *False* ou igual a zero.                   |
+
+
+
 ## Exemplos
 
 Se o *Arquivo* não existir ele será criado.
