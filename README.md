@@ -54,45 +54,45 @@ End Function
 Escrever ou definir uma *Cadeia de Caracteres* de 32767 bytes na *Seção* e *Chave* especificadas no perfil privado, se o *Arquivo* não existir ele será criado.
 
 ```basic
-    Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
-        "Section1",
-        "Key1",
-        System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
-        System.IO.Path.GetFullPath(".\File.ini")
-    )
+Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+    "Section1",
+    "Key1",
+    System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
+    System.IO.Path.GetFullPath(".\File.ini")
+)
 ```
 
 Exclua uma *Cadeia de Caracteres* na *Seção* e *Chave* especificadas no perfil privado, se o valor da *Cadeia de Caracteres* for o caractere *Null* apenas o valor será excluído.
 
 ```basic
-    Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
-        "Section1",
-        "Key1",
-        System.Text.Encoding.Default.GetBytes(Chr(0)),
-        System.IO.Path.GetFullPath(".\File.ini")
-    )
+Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+    "Section1",
+    "Key1",
+    System.Text.Encoding.Default.GetBytes(Chr(0)),
+    System.IO.Path.GetFullPath(".\File.ini")
+)
 ```
 
 Excluir uma *Chave* na *Seção* e *Chave* especificadas no perfil privado, se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
 
 ```basic
-    Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
-        "Section1",
-        "Key1",
-        Nothing,
-        System.IO.Path.GetFullPath(".\File.ini")
-    )
+Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+    "Section1",
+    "Key1",
+    Nothing,
+    System.IO.Path.GetFullPath(".\File.ini")
+)
 ```
 
 Excluir uma *Seção* na *Seção* especificada no perfil privado, se o valor da *chave*, independentemente do valor da *cadeia de caracteres*, for igual a *Nothing* a *Seção* toda será excluída.
 
 ```basic
-    Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
-        "Section1",
-        Nothing,
-        System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
-        System.IO.Path.GetFullPath(".\File.ini")
-    )
+Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+    "Section1",
+    Nothing,
+   System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
+   System.IO.Path.GetFullPath(".\File.ini")
+)
 ```
 
 ## Pré-requisitos para uso da função
