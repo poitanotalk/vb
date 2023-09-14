@@ -60,7 +60,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-O exemplo a seguir apaga ou limpa o valor da **Cadeia de Caracteres**, apenas terminando em **Null**.
+O exemplo a seguir apaga ou limpa o espaço do campo ou valor ****Cadeia de Caracteres**** se for apenas o caractere **Null**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
