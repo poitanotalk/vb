@@ -49,7 +49,7 @@ End Function
 
 ## Exemplos
 
-Requer apenas o **Caminho**, se o **Arquivo** não existir ele será criado.
+Neste exemplo, a função escreve ou define uma **Cadeia de Caracteres** na **Seção** e **Chave** especificadas no perfil privado do **Arquivo**. Requer o **Caminho** e se o **Arquivo** não existir ele será criado.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -60,7 +60,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Se o valor da **Cadeia de Caracteres** for o **Caractere Null** apenas o valor será excluído.
+O exemplo a seguir apaga ou limpa o valor **Cadeia de Caracteres** terminando em **Null**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -71,7 +71,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Se o valor da **Cadeia de Caracteres** for igual a **Nothing** a **Chave** será excluída.
+Este exemplo exclui uma **Chave** inteira se o valor **Cadeia de Caracteres** for apenas **Nothing**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -82,7 +82,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Se o valor da **Chave**, independentemente do valor da **Cadeia de Caracteres**, for igual a **Nothing** a **Seção** toda será excluída.
+Este exemplo exclui uma **Seção** inteira se o valor **Chave** for apenas **Nothing**, independentemente de o valor **Cadeia de Caracteres** ser **Nothing** também.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
