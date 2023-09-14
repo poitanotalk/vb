@@ -49,7 +49,7 @@ End Function
 
 ## Exemplos
 
-Neste exemplo, a função escreve ou define uma **Cadeia de Caracteres** na **Seção** e **Chave** especificadas no perfil privado do **Arquivo**. Requer o **Caminho** e se o **Arquivo** não existir ele será criado.
+Neste exemplo, a função escreve ou define uma **Cadeia de Caracteres** na **Seção** e **Chave** especificadas no perfil privado do **Arquivo**, requer apenas o **Caminho** e **Diretório** existentes, se o **Arquivo** não existir ele será criado.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
