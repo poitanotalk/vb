@@ -114,5 +114,4 @@ Writeprofilestring
 
 ----
 
-Os projetos da comunidade @Fabasa-Pro Developer adotam uma [licença MIT](https://github.com/fabasapro/fabasapro/blob/main/LICENSE). Consulte o arquivo [LICENSE.TXT](https://github.com/fabasapro/fabasapro/blob/main/LICENSE.TXT), para obter mais informações.
-
+Copyright © 2023 @Fabasa-Pro Developer.
