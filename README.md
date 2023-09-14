@@ -43,7 +43,7 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 `[in] lpString` Representa a *cadeia de caracteres* terminando em *Null* que será escrita. Se este parâmetro for *Nothing* a chave será excluída.
 
-`[in] lpFileName` Representa o nome do *arquivo* para a qual a cadeia de caracteres será escrita. Se o arquivo for criado com codificação **Unicode**, a função escreve caracteres *Unicode*, caso contrário, a função escreve caracteres *Default* **ANSI**.
+`[in] lpFileName` Representa o caminho e o nome do *arquivo* para a qual a cadeia de caracteres será escrita. Se o arquivo for criado com codificação *Unicode*, a função escreve caracteres *Unicode*, caso contrário, a função escreve caracteres *Default*/*ANSI*.
 
 ## Retorno
 
