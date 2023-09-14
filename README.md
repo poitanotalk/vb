@@ -51,54 +51,15 @@ Se a função for bem-sucedida, o valor retornado será `True` ou diferente de z
 
 ## Exemplo 1
 
-
-
-
-
-
-
-O arquivo [File.ini](https://github.com/fabasapro/fabasapro/blob/main/LICENSE.TXT) deve ter o seguinte formato:
-
-```file
-[Section1]
-Key1=Value1
-```
-
-O arquivo [Module1.vb](https://github.com/fabasapro/fabasapro/blob/main/LICENSE.TXT) deve ter o seguinte formato:
-
 ```basic
-' Licenciado sob a licença MIT.
-' Copyright (C) 1991-2023 Fabasa-Pro Developer.
-' Consulte LICENSE.TXT na raiz do projeto para obter informações.
-Module Module1
-    ' Esta função serve para escrever ou definir uma cadeia de caracteres na
-    ' seção e chave especificadas no perfil privado.
-    Private Declare Ansi Function WritePrivateProfileString _
-        Lib "Kernel32.dll" _
-        Alias "WritePrivateProfileStringA" (
-        ByVal lpAppName As System.String,    ' [in] LPCSTR
-        ByVal lpKeyName As System.String,    ' [in] LPCSTR
-        ByVal lpString As System.Byte(),     ' [in] LPCSTR
-        ByVal lpFileName As System.String    ' [in] LPCSTR
-    ) As System.Boolean                      ' [out] BOOL
-    Sub Main()
         ' Escrever ou definir uma cadeia de caracteres de 32767 bytes na seção e
         ' chave especificadas no perfil privado.
-        Dim lpString As System.Byte() =
-            System.Text.Encoding.Default.GetBytes("Value1")
-        If WritePrivateProfileString(
-                "Section1",
-                "Key1",
-                lpString,    ' Comprimento de 0 a 32767 bytes
-                System.IO.Path.GetFullPath(".\File.ini")
-            ) Then
-            System.Console.WriteLine("Escrita bem-sucedida!")
-        Else
-            System.Console.WriteLine("Erro ao escrever!")
-        End If
-        System.Console.ReadKey(True)    ' Pausar
-    End Sub
-End Module
+        Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
+            "Section1",
+            "Key1",
+            System.Text.Encoding.Default.GetBytes("Value1" & Chr(0)),
+            System.IO.Path.GetFullPath(".\File.ini")
+        )
 ```
 
 ## Pré-requisitos para uso da função
