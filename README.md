@@ -60,7 +60,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-O exemplo a seguir apaga ou limpa o valor **Cadeia de Caracteres** terminando em **Null**.
+O exemplo a seguir apaga ou limpa o valor da **Cadeia de Caracteres**, apenas terminando em **Null**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -71,7 +71,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Este exemplo exclui uma **Chave** inteira se o valor **Cadeia de Caracteres** for apenas **Nothing**.
+Este exemplo exclui uma **Chave** inteira se o valor da **Cadeia de Caracteres** for apenas **Nothing**.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -82,7 +82,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Este exemplo exclui uma **Seção** inteira se o valor **Chave** for apenas **Nothing**, independentemente de o valor **Cadeia de Caracteres** ser **Nothing** também.
+Este exemplo exclui uma **Seção** inteira se o valor **Chave** for apenas **Nothing**, independentemente se o valor da **Cadeia de Caracteres** for **Nothing** também.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
