@@ -37,13 +37,13 @@ End Function
 
 ## Parâmetros
 
-|Nome                      |Descrição                                                                                                                                                                |
-|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|**lpAppName**             |Representa o nome da **Seção** na qual a cadeia de caracteres será escrita. O nome **seção** não será diferente de **SEÇÃO**, independente de maiúsculas e minúsculas.|
-|**lpKeyName**             |Representa o nome da **Chave** para a qual a **Cadeia de Caracteres** será escrita. Se este parâmetro for **Nothing** toda a seção será excluída.                        |
-|**lpString**              |Representa a **Cadeia de Caracteres** terminanda em **Null** que será escrita. Se este parâmetro for **Nothing** a chave será excluída.                        |
-|**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                    |
-|**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                    |
+|Nome                      |Descrição                                                                                                                                                                 |
+|:-------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|**lpAppName**             |Representa o nome da **Seção** na qual a **Cadeia de Caracteres** será escrita. O nome **seção** não será diferente de **SEÇÃO**, independente de maiúsculas e minúsculas.|
+|**lpKeyName**             |Representa o nome da **Chave** para a qual a **Cadeia de Caracteres** será escrita. Se este parâmetro for **Nothing** toda a seção será excluída.                         |
+|**lpString**              |Representa a **Cadeia de Caracteres** terminanda em **Null** que será escrita. Se este parâmetro for **Nothing** a chave será excluída.                                   |
+|**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                     |
+|**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                     |
 
 
 
