@@ -39,7 +39,7 @@ End Function
 |**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                              |
 |**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                              |
 
-> :bell: :loudspeaker: **Importante:** <br>Existe um valor máximo de 32.767 caracteres para **Cadeia de Caracteres** devido às plataformas Win 95/98/Me de 16 bits. É extremamente importante sempre definir um *valor* ou *buffer* de 0 a 32.767 bytes, incluindo o caractere **NULL** final.
+> :bell: :loudspeaker: :hammer_and_wrench: :no_entry: :red_circle: :x: :triangular_flag_on_post: **Importante:** <br>Existe um valor máximo de 32.767 caracteres para **Cadeia de Caracteres** devido às plataformas Win 95/98/Me de 16 bits. É extremamente importante sempre definir um *valor* ou *buffer* de 0 a 32.767 bytes, incluindo o caractere **NULL** final.
 
 ## Exemplos
 
