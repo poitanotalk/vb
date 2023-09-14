@@ -51,7 +51,7 @@ End Function
 
 ## Exemplos
 
-Escrever ou definir uma *Cadeia de Caracteres* de 32767 bytes na *Seção* e *Chave* especificadas no perfil privado, se o *Arquivo* não existir ele será criado.
+Se o *Arquivo* não existir ele será criado.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -62,7 +62,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Exclua uma *Cadeia de Caracteres* na *Seção* e *Chave* especificadas no perfil privado, se o valor da *Cadeia de Caracteres* for o caractere *Null* apenas o valor será excluído.
+Se o valor da *Cadeia de Caracteres* for o caractere *Null* apenas o valor será excluído.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -73,7 +73,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Excluir uma *Chave* na *Seção* e *Chave* especificadas no perfil privado, se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
+Se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -84,7 +84,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Excluir uma *Seção* na *Seção* especificada no perfil privado, se o valor da *chave*, independentemente do valor da *cadeia de caracteres*, for igual a *Nothing* a *Seção* toda será excluída.
+Se o valor da *chave*, independentemente do valor da *cadeia de caracteres*, for igual a *Nothing* a *Seção* toda será excluída.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
