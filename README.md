@@ -84,7 +84,7 @@ Se o valor da *cadeia de caracteres* for *Nothing* toda a *chave* será excluíd
         )
 ```
 
-Se toda a *chave* for *Nothing*, independentemente do valor da *cadeia de caracteres*, toda a *seção* será excluída.
+Se o valor da *chave* for *Nothing*, independentemente do valor da *cadeia de caracteres*, toda a *seção* será excluída.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
