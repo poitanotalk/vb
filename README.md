@@ -8,9 +8,7 @@ A função **WritePrivateProfileStringA** *grava* ou *define* uma **Cadeia de Ca
 
 **`Declare Visual Basic`**
 ```basic
-Private Declare Ansi Function WritePrivateProfileString _
-Lib "Kernel32.dll" _
-Alias "WritePrivateProfileStringA" (
+Private Declare Ansi Function WritePrivateProfileString Lib "Kernel32.dll" Alias "WritePrivateProfileStringA" (
     ByVal lpAppName As System.String,    ' [in] LPCSTR
     ByVal lpKeyName As System.String,    ' [in] LPCSTR
     ByVal lpString As System.Byte(),     ' [in] LPCSTR
@@ -20,10 +18,7 @@ Alias "WritePrivateProfileStringA" (
 
 **`P/Invoke Visual Basic .NET`**
 ```basic
-<System.Runtime.InteropServices.DllImport(
-"Kernel32.dll",
-CharSet:=System.Runtime.InteropServices.CharSet.Ansi,
-EntryPoint:="WritePrivateProfileStringA")>
+<System.Runtime.InteropServices.DllImport("Kernel32.dll", CharSet:=System.Runtime.InteropServices.CharSet.Ansi, EntryPoint:="WritePrivateProfileStringA")>
 Private Shared Function WritePrivateProfileString(
     ByVal lpAppName As System.String,    ' [in] LPCSTR
     ByVal lpKeyName As System.String,    ' [in] LPCSTR
