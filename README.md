@@ -51,7 +51,7 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 ## Exemplos
 
-Escrever ou definir uma cadeia de caracteres de 32767 bytes na seção e chave especificadas no perfil privado, se o arquivo não existir ele será criado.
+Escrever ou definir uma *cadeia de caracteres* de 32767 bytes na *seção* e *chave* especificadas no perfil privado, se o *arquivo* não existir ele será criado.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -62,7 +62,7 @@ Escrever ou definir uma cadeia de caracteres de 32767 bytes na seção e chave e
         )
 ```
 
-Se o valor do parâmetro *lpString* for igual ao caractere *null*, apenas o valor da chave será apagado.
+Se o valor do parâmetro *lpString* for igual ao caractere *Null*, apenas o valor da chave será apagado.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
