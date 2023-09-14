@@ -45,8 +45,6 @@ End Function
 
 `[in] lpFileName` Representa o caminho e o nome do *arquivo* para a qual a cadeia de caracteres será escrita. Se o arquivo for criado com codificação *Unicode*, a função escreve caracteres *Unicode*, caso contrário, a função escreve caracteres *Default*/*ANSI*.
 
-## Retorno
-
 `[out] lpReturnedBool` Se a função for bem-sucedida, o valor retornado será *True* ou diferente de zero, caso contrário, o valor retornado será *False* ou igual a zero.
 
 ## Exemplos
