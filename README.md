@@ -39,9 +39,6 @@ End Function
 |**lpFileName**            |Representa o **Caminho** e o nome do **Arquivo** para a qual a **Cadeia de Caracteres** será escrita.                                                                              |
 |**lpReturnedBool**        |Se a função for bem-sucedida, o valor retornado será **True** ou diferente de zero, caso contrário, o valor retornado será **False** ou igual a zero.                              |
 
-
-> :bell: **Importante** Há um valor máximo de 32.767 caracteres para a **Cadeia de Caracteres** devido às plataformas Win 95/98/Me de 16 bits. É extremamente importante sempre definir um valor de buffer de 0 a 32.767 bytes ou caracteres, já incluindo o caractere NULL no final.
-
 > :bell: **Importante** Existe um valor máximo de 32.767 caracteres para **Cadeia de Caracteres** devido às plataformas Win 95/98/Me de 16 bits. É extremamente importante sempre definir um *valor* ou *buffer* de 0 a 32.767 bytes, incluindo o caractere **NULL** final.
 
 ## Exemplos
