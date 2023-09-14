@@ -54,7 +54,6 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-
 O exemplo a seguir *remove* ou *limpa* o espaço da **Cadeia de Caracteres**, que foi *escrita* ou *definida*, apenas escrevendo o caractere **NULL**.
 
 ```basic
@@ -87,6 +86,10 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
    System.IO.Path.GetFullPath(".\File.ini")
 )
 ```
+
+#### Escrevendo Metadados - Sample
+
+Aqui está um *Aplicativo Desktop* para um *Sistema de Gerenciamento de Dados* em múltiplos arquivos INI, onde cada arquivo INI representa um *registro* em um diretório [Clientes]. Para adicionar, editar ou excluir registros reais.
 
 ## Pré-requisitos para uso da função
 
