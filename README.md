@@ -6,7 +6,7 @@ A função **WritePrivateProfileStringA** *grava* ou *define* uma **Cadeia de Ca
 
 ## Sintaxe
 
-**`Declare Visual Basic`**
+**`Declare Visual Basic .NET`**
 ```basic
 Private Declare Ansi Function WritePrivateProfileString Lib "Kernel32.dll" Alias "WritePrivateProfileStringA" (
     ByVal lpAppName As System.String,    ' [in] LPCSTR
