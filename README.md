@@ -49,7 +49,7 @@ End Function
 
 ## Exemplos
 
-Se o *Arquivo* não existir ele será criado.
+Requer apenas o **Caminho**, se o **Arquivo** não existir ele será criado.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -60,7 +60,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Se o valor da *Cadeia de Caracteres* for o caractere *Null* apenas o valor será excluído.
+Se o valor da **Cadeia de Caracteres** for o **Caractere Null** apenas o valor será excluído.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -71,7 +71,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
+Se o valor da **Cadeia de Caracteres** for igual a **Nothing** a **Chave** será excluída.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -82,7 +82,7 @@ Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
 )
 ```
 
-Se o valor da *chave*, independentemente do valor da *cadeia de caracteres*, for igual a *Nothing* a *Seção* toda será excluída.
+Se o valor da **Chave**, independentemente do valor da **Cadeia de Caracteres**, for igual a **Nothing** a **Seção** toda será excluída.
 
 ```basic
 Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
