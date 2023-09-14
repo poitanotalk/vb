@@ -51,7 +51,7 @@ Esta função serve para escrever ou definir uma cadeia de caracteres na seção
 
 ## Exemplos
 
-Escrever ou definir uma *cadeia de caracteres* de 32767 bytes na *seção* e *chave* especificadas no perfil privado, se o *arquivo* não existir ele será criado.
+Escrever ou definir uma *Cadeia de Caracteres* de 32767 bytes na *Seção* e *Chave* especificadas no perfil privado, se o *Arquivo* não existir ele será criado.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -62,7 +62,7 @@ Escrever ou definir uma *cadeia de caracteres* de 32767 bytes na *seção* e *ch
         )
 ```
 
-Se o valor da *cadeia de caracteres* for o caractere *Null* apenas o valor da *chave* será apagado.
+Exclua uma *Cadeia de Caracteres* na *Seção* e *Chave* especificadas no perfil privado, se o valor da *Cadeia de Caracteres* for o caractere *Null* apenas o valor será excluído.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -73,7 +73,7 @@ Se o valor da *cadeia de caracteres* for o caractere *Null* apenas o valor da *c
         )
 ```
 
-Se o valor da *cadeia de caracteres* for *Nothing* toda a *chave* será excluída.
+Excluir uma *Chave* na *Seção* especificada no perfil privado, se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
 
 ```basic
         Dim lpReturnedBool As System.Boolean = WritePrivateProfileString(
@@ -83,6 +83,8 @@ Se o valor da *cadeia de caracteres* for *Nothing* toda a *chave* será excluíd
             System.IO.Path.GetFullPath(".\File.ini")
         )
 ```
+
+Excluir uma *Seção* na *Seção* especificada no perfil privado, se o valor da *Cadeia de Caracteres* for igual a *Nothing* a *Chave* será excluída.
 
 Se o valor da *chave* for *Nothing*, independentemente do valor da *cadeia de caracteres*, toda a *seção* será excluída.
 
